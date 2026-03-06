@@ -36,7 +36,7 @@ export const Default: Story = {
         <>
             <h1 className="font-size-h3">Watch Palette Design System</h1>
 
-            {/* --- GRIGI NATURALI --- */}
+            {/* --- GRIGI --- */}
             <h2 className='font-size-h4'>Gray (Colore primario)</h2>
             <div className="container">
                 {Array.from({ length: 16 }).map((_, i) => (
@@ -44,6 +44,30 @@ export const Default: Story = {
                         style={{ backgroundColor: `var(--color-gray-${i})` }}
                         key={i}
                         value={`--color-gray-${i}`}
+                    />
+                ))}
+            </div>
+
+            {/* --- VERDI --- */}
+            <h2 className='font-size-h4'>Green (Colore badge nuovo prodotto)</h2>
+            <div className="container">
+                {Array.from({ length: 16 }).map((_, i) => (
+                    <ClickToCopy
+                        style={{ backgroundColor: `var(--color-green-${i})` }}
+                        key={i}
+                        value={`--color-green-${i}`}
+                    />
+                ))}
+            </div>
+
+            {/* --- ROSSI--- */}
+            <h2 className='font-size-h4'>Red (Colore badge sconto)</h2>
+            <div className="container">
+                {Array.from({ length: 16 }).map((_, i) => (
+                    <ClickToCopy
+                        style={{ backgroundColor: `var(--color-red-${i})` }}
+                        key={i}
+                        value={`--color-red-${i}`}
                     />
                 ))}
             </div>
