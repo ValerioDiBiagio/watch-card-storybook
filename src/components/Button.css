@@ -1,0 +1,27 @@
+/* Stile base del bottone */
+.button {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 3rem;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+/* Variante principale (Add to Cart) */
+.button-primary {
+    background: var(--color-heavenly-11);
+    color: var(--color-gray-1);
+}
+
+.button-primary:hover {
+    background: var(--color-heavenly-11);
+}
+
+/* Bottone disabilitato (es. prodotto esaurito) */
+.button-disabled {
+    background: var(--color-heavenly-9);
+    color: var(--color-gray-1);
+    cursor: not-allowed;
+}

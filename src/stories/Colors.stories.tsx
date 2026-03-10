@@ -36,20 +36,20 @@ export const Default: Story = {
         <>
             <h1 className="font-size-h3">Watch Palette Design System</h1>
 
-            {/* --- GRIGI --- */}
-            <h2 className='font-size-h4'>Gray (Colore primario)</h2>
+            {/* --- BLU--- */}
+            <h2 className='font-size-h4'>Blue (Primary color)</h2>
             <div className="container">
                 {Array.from({ length: 16 }).map((_, i) => (
                     <ClickToCopy
-                        style={{ backgroundColor: `var(--color-gray-${i})` }}
+                        style={{ backgroundColor: `var(--color-heavenly-${i})` }}
                         key={i}
-                        value={`--color-gray-${i}`}
+                        value={`--color-heavenly-${i}`}
                     />
                 ))}
             </div>
 
             {/* --- VERDI --- */}
-            <h2 className='font-size-h4'>Green (Colore badge nuovo prodotto)</h2>
+            <h2 className='font-size-h4'>Green (New product badge color)</h2>
             <div className="container">
                 {Array.from({ length: 16 }).map((_, i) => (
                     <ClickToCopy
@@ -61,13 +61,25 @@ export const Default: Story = {
             </div>
 
             {/* --- ROSSI--- */}
-            <h2 className='font-size-h4'>Red (Colore badge sconto)</h2>
+            <h2 className='font-size-h4'>Red (Discount badge color)</h2>
             <div className="container">
                 {Array.from({ length: 16 }).map((_, i) => (
                     <ClickToCopy
                         style={{ backgroundColor: `var(--color-red-${i})` }}
                         key={i}
                         value={`--color-red-${i}`}
+                    />
+                ))}
+            </div>
+
+            {/* --- GRIGI --- */}
+            <h2 className='font-size-h4'>Gray (Sold out badge color)</h2>
+            <div className="container">
+                {Array.from({ length: 16 }).map((_, i) => (
+                    <ClickToCopy
+                        style={{ backgroundColor: `var(--color-gray-${i})` }}
+                        key={i}
+                        value={`--color-gray-${i}`}
                     />
                 ))}
             </div>
