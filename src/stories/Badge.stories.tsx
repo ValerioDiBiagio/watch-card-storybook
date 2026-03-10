@@ -23,7 +23,7 @@ type Story = StoryObj<typeof Badge>;
 
 export const AllBadges = {
   render: () => (
-    <div style={{ display: "flex", gap: "12px" }}>
+    <div className="all-badges">
       <Badge label="Discount" variant="discount" />
       <Badge label="Sold Out" variant="sold-out" />
       <Badge label="New Arrival" variant="new-arrival" />

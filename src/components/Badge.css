@@ -1,20 +1,26 @@
 .badge {
-  padding: 4px 8px;
-  border-radius: 6px;
-  font-size: 12px;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: 3rem;
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
 }
 
 .badge-discount {
-  background: red;
-  color: white;
+  background: var(--color-red-8);
+  color: var(--color-gray-1);
 }
 
 .badge-sold-out {
-  background: gray;
-  color: white;
+  background: var(--color-gray-11);
+  color: var(--color-gray-1);
 }
 
 .badge-new-arrival {
-  background: green;
-  color: white;
+  background: var(--color-green-8);
+  color: var(--color-gray-1);
+}
+
+.all-badges {
+  display: flex;
+  gap: var(--spacing-xs)
 }
