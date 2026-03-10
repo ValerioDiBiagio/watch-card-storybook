@@ -1,14 +1,17 @@
 import React from "react";
 
+// Definizione delle props accettate dal componente Badge
 type BadgeProps = {
-  label: string;
-  ariaLabel?: string;
-  variant?: "discount" | "sold-out" | "new-arrival";
+  label: string; // Testo visibile all'interno del badge
+  ariaLabel?: string; // Etichetta opzionale per accessibilità (screen reader)
+  variant?: "discount" | "sold-out" | "new-arrival"; // Variante visiva del badge
 };
 
-export const Badge: React.FC<BadgeProps> = ({ label, variant = "discount" }) => {
+// Componente Badge: mostra uno stato del prodotto (es. sconto, esaurito, nuovo)
+export const Badge: React.FC<BadgeProps> = ({ label, ariaLabel, variant = "discount" }) => {
   return (
-    <span className={`badge badge-${variant}`}>
+    // La classe cambia in base alla variante per applicare lo stile corretto
+    <span className={`badge badge-${variant}`} aria-label={ariaLabel ?? label}>
       {label}
     </span>
   );
