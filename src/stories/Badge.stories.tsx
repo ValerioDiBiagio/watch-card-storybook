@@ -15,13 +15,41 @@ const meta: Meta<typeof Badge> = {
       },
     },
   },
+
+  argTypes: {
+    variant: {
+      control: { type: "select" },
+      options: ["discount", "sold-out", "new-arrival"],
+      description: "Defines the visual style of the badge depending on the product status.",
+      table: {
+        type: { summary: "string" },
+        defaultValue: { summary: "discount" },
+      },
+    },
+
+    label: {
+      control: { type: "text" },
+      description: "Text displayed inside the badge.",
+      table: {
+        type: { summary: "string" },
+      },
+    },
+
+    ariaLabel: {
+      control: { type: "text" },
+      description: "Accessible label for screen readers.",
+      table: {
+        type: { summary: "string" },
+      },
+    },
+  },
 };
 
 export default meta;
 
 type Story = StoryObj<typeof Badge>;
 
-export const AllBadges = {
+export const AllBadges: Story = {
   render: () => (
     <div className="all-badges">
       <Badge label="Discount" variant="discount" />
