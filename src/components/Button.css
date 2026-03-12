@@ -9,19 +9,40 @@
     transition: background 0.2s ease;
 }
 
-/* Variante principale (Add to Cart) */
+/* Variante principale */
 .button-primary {
     background: var(--color-heavenly-11);
     color: var(--color-gray-1);
 }
 
-.button-primary:hover {
+.button-primary:hover:not(:disabled) {
     background: var(--color-heavenly-11);
 }
 
-/* Bottone disabilitato (es. prodotto esaurito) */
-.button-disabled {
+/* Stato disabilitato */
+.button:disabled {
     background: var(--color-heavenly-9);
     color: var(--color-gray-1);
     cursor: not-allowed;
+}
+
+/* Dimensioni */
+.button-small {
+    padding: 4px 10px;
+    font-size: 12px;
+}
+
+.button-medium {
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+.button-large {
+    padding: 12px 20px;
+    font-size: 16px;
+}
+
+/* Storybook demo */
+.allbuttonsize .button {
+    margin: 5px;
 }

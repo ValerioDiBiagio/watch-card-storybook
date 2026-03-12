@@ -19,8 +19,19 @@ const meta: Meta<typeof Button> = {
     argTypes: {
         variant: {
             control: { type: "select" },
-            options: ["primary", "disabled"],
-            description: "Defines the visual state of the button.",
+            options: ["primary"],
+            description: "Defines the visual style of the button.",
+        },
+
+        disabled: {
+            control: { type: "boolean" },
+            description: "Disables the button.",
+        },
+
+        size: {
+            control: { type: "select" },
+            options: ["small", "medium", "large"],
+            description: "Defines the size of the button.",
         },
 
         label: {
@@ -34,16 +45,43 @@ export default meta;
 
 type Story = StoryObj<typeof Button>;
 
-export const AddToCart: Story = {
+export const DefaultButton: Story = {
     args: {
-        label: "Aggiungi al carello",
-        variant: "primary",
+        label: "Aggiungi al carrello",
+        size: "medium",
+        disabled: false,
     },
 };
 
-export const Disabled: Story = {
+export const OutOfStockButton: Story = {
     args: {
-        label: "Non disponibile",
-        variant: "disabled",
+        label: "Aggiungi al carrello",
+        size: "medium",
+        disabled: true,
     },
+};
+export const SmallButton: Story = {
+    args: {
+        label: "Aggiungi al carrello",
+        variant: "primary",
+        size: "small",
+    },
+};
+
+export const LargeButton: Story = {
+    args: {
+        label: "Aggiungi al carrello",
+        variant: "primary",
+        size: "large",
+    },
+};
+
+export const AllSizesButton: Story = {
+    render: () => (
+        <div className="allbuttonsize">
+            <Button label="Aggiungi al carrello" size="small" />
+            <Button label="Aggiungi al carrello" size="medium" />
+            <Button label="Aggiungi al carrello" size="large" />
+        </div>
+    ),
 };

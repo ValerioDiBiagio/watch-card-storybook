@@ -1,27 +1,33 @@
 import React from "react";
 
 type ButtonProps = {
-    label: string; // testo visibile nel bottone
-    onClick?: () => void; // funzione eseguita al click
-    variant?: "primary" | "disabled"; // varianti del bottone
-    ariaLabel?: string; // accessibilità
+    label: string;
+    onClick?: () => void;
+    variant?: "primary";
+    ariaLabel?: string;
+    size?: "small" | "medium" | "large";
+    disabled?: boolean;
 };
 
-// Bottone usato nella card prodotto per aggiungere articoli al carrello
 export const Button: React.FC<ButtonProps> = ({
     label,
     onClick,
     variant = "primary",
-    ariaLabel
+    ariaLabel,
+    size = "medium",
+    disabled = false
 }) => {
+
+    const buttonLabel = disabled ? "Non disponibile" : label;
+
     return (
         <button
-            className={`button button-${variant}`}
+            className={`button button-${variant} button-${size}`}
             onClick={onClick}
-            aria-label={ariaLabel ?? label}
-            disabled={variant === "disabled"}
+            aria-label={ariaLabel ?? buttonLabel}
+            disabled={disabled}
         >
-            {label}
+            {buttonLabel}
         </button>
     );
 };
