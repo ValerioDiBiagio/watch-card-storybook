@@ -2,10 +2,11 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Button } from "../components/Button";
 import "../components/Button.css";
 
+// Configurazione principale della story
 const meta: Meta<typeof Button> = {
-    title: "Components/Button",
+    title: "Components/Button", // posizione nel menu di Storybook
     component: Button,
-    tags: ["autodocs"],
+    tags: ["autodocs"], // genera automaticamente la documentazione
     parameters: {
         layout: "centered",
         docs: {
@@ -16,6 +17,7 @@ const meta: Meta<typeof Button> = {
         },
     },
 
+    // Controlli modificabili dal pannello Controls
     argTypes: {
         variant: {
             control: { type: "select" },
@@ -45,6 +47,7 @@ export default meta;
 
 type Story = StoryObj<typeof Button>;
 
+// Bottone standard utilizzato nella card prodotto
 export const DefaultButton: Story = {
     args: {
         label: "Aggiungi al carrello",
@@ -53,6 +56,7 @@ export const DefaultButton: Story = {
     },
 };
 
+// Stato quando il prodotto non è disponibile
 export const OutOfStockButton: Story = {
     args: {
         label: "Aggiungi al carrello",
@@ -60,6 +64,8 @@ export const OutOfStockButton: Story = {
         disabled: true,
     },
 };
+
+// Variante con dimensione small
 export const SmallButton: Story = {
     args: {
         label: "Aggiungi al carrello",
@@ -68,6 +74,7 @@ export const SmallButton: Story = {
     },
 };
 
+// Variante con dimensione large
 export const LargeButton: Story = {
     args: {
         label: "Aggiungi al carrello",
@@ -76,6 +83,7 @@ export const LargeButton: Story = {
     },
 };
 
+// Story dimostrativa con tutte le dimensioni del bottone
 export const AllSizesButton: Story = {
     render: () => (
         <div className="allbuttonsize">
