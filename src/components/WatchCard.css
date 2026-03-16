@@ -1,0 +1,48 @@
+.watch-card {
+    width: 260px;
+    border-radius: var(--spacing-sm);
+    background: var(--color-gray-0);
+    box-shadow: 0 4px 10px oklch(0% 0 0 / 0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.watch-card-image {
+    position: relative;
+    padding: var(--spacing-md);
+    background: var(--color-gray-1);
+}
+
+.watch-card-image img {
+    width: 100%;
+    height: auto;
+}
+
+.watch-card-content {
+    padding: var(--spacing-md);
+}
+
+.watch-brand {
+    font-size: var(--font-size-xs);
+    color: var(--color-gray-9);
+}
+
+.watch-name {
+    font-size: var(--font-size-h6);
+    margin: var(--spacing-xs) 0;
+    color: var(--color-gray-13);
+}
+
+.watch-price {
+    font-size: var(--font-size-body);
+    font-weight: 600;
+    margin-top: var(--spacing-sm);
+    color: var(--color-green-9);
+}
+
+.watch-card-actions {
+    padding: var(--spacing-md);
+    display: flex;
+    gap: var(--spacing-sm);
+}
