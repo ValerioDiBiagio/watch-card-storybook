@@ -25,13 +25,18 @@
 
 .watch-brand {
     font-size: var(--font-size-xs);
-    color: var(--color-gray-9);
+    color: var(--color-gray-11);
 }
 
 .watch-name {
     font-size: var(--font-size-h6);
     margin: var(--spacing-xs) 0;
     color: var(--color-gray-13);
+}
+
+.watch-reference {
+    font-size: var(--font-size-xs);
+    color: var(--color-gray-11);
 }
 
 .watch-price {

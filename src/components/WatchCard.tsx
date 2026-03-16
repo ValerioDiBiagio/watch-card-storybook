@@ -7,6 +7,7 @@ type WatchCardProps = {
     image: string;
     brand: string;
     name: string;
+    reference: string;
     price: string;
     badgeLabel?: string;
     badgeVariant?: "discount" | "sold-out" | "new-arrival";
@@ -18,6 +19,7 @@ export const WatchCard: React.FC<WatchCardProps> = ({
     image,
     brand,
     name,
+    reference,
     price,
     badgeLabel,
     badgeVariant,
@@ -39,8 +41,9 @@ export const WatchCard: React.FC<WatchCardProps> = ({
             </div>
 
             <div className="watch-card-content">
-                <span className="watch-brand">{brand}</span>
+                <h5 className="watch-brand">{brand}</h5>
                 <h3 className="watch-name">{name}</h3>
+                <h4 className="watch-reference">{reference}</h4>
                 <p className="watch-price">{price}</p>
             </div>
 

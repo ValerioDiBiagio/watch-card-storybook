@@ -8,10 +8,16 @@ type BadgeProps = {
 };
 
 // Componente Badge: mostra uno stato del prodotto (es. sconto, esaurito, nuovo)
-export const Badge: React.FC<BadgeProps> = ({ label, ariaLabel, variant = "discount" }) => {
+export const Badge: React.FC<BadgeProps> = ({
+  label,
+  ariaLabel,
+  variant = "discount",
+}) => {
   return (
-    // La classe cambia in base alla variante per applicare lo stile corretto
-    <span className={`badge badge-${variant}`} aria-label={ariaLabel ?? label}>
+    <span
+      className={`badge badge-${variant}`}
+      {...(ariaLabel ? { "aria-label": ariaLabel } : {})}
+    >
       {label}
     </span>
   );
