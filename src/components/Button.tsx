@@ -19,7 +19,7 @@ export const Button: React.FC<ButtonProps> = ({
 }) => {
 
     // Se il bottone è disabilitato mostriamo automaticamente "Non disponibile"
-    const buttonLabel = disabled ? "Non disponibile" : label;
+    const buttonLabel = disabled ? "Not available" : label;
 
     return (
         <button

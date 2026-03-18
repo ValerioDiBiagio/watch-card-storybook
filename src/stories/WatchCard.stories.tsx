@@ -10,12 +10,12 @@ export default {
 
 export const NewArrival = {
     args: {
-        image: "https://via.placeholder.com/200",
+        image: "src/assets/image/rolex-submariner.png",
         brand: "Rolex",
-        name: "Submariner",
-        reference: "fff",
+        name: "Submariner Date",
+        reference: "Ref. 116610LN von 2012 / LC170",
         price: "€9.500",
-        badgeLabel: "New arrival",
+        badgeLabel: "New",
         badgeVariant: "new-arrival",
     },
 };

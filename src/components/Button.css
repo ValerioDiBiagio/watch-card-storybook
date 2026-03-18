@@ -6,13 +6,18 @@
     font-weight: 500;
     border: none;
     cursor: pointer;
-    transition: background 0.2s ease;
+    transition: background 0.2s ease, filter 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Variante principale */
 .button-primary {
     background: var(--color-heavenly-11);
     color: var(--color-gray-1);
+}
+
+/* Hover: leggerissimo zoom */
+.button:hover:not(:disabled) {
+    transform: scale(1.03);
 }
 
 .button-primary:hover:not(:disabled) {

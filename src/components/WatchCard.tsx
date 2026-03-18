@@ -45,18 +45,14 @@ export const WatchCard: React.FC<WatchCardProps> = ({
                 <h3 className="watch-name">{name}</h3>
                 <h4 className="watch-reference">{reference}</h4>
                 <p className="watch-price">{price}</p>
-            </div>
-
-            <div className="watch-card-actions">
                 <Button
-                    label="Aggiungi al carrello"
+                    label="Add to cart"
                     variant="primary"
                     size="medium"
                     onClick={onAddToCart}
                     disabled={disabled}
                 />
             </div>
-
         </div>
     );
 };

@@ -50,7 +50,7 @@ type Story = StoryObj<typeof Button>;
 // Bottone standard utilizzato nella card prodotto
 export const DefaultButton: Story = {
     args: {
-        label: "Aggiungi al carrello",
+        label: "Add to cart",
         size: "medium",
         disabled: false,
     },
@@ -59,7 +59,7 @@ export const DefaultButton: Story = {
 // Stato quando il prodotto non è disponibile
 export const OutOfStockButton: Story = {
     args: {
-        label: "Aggiungi al carrello",
+        label: "Add to cart",
         size: "medium",
         disabled: true,
     },
@@ -68,7 +68,7 @@ export const OutOfStockButton: Story = {
 // Variante con dimensione small
 export const SmallButton: Story = {
     args: {
-        label: "Aggiungi al carrello",
+        label: "Add to cart",
         variant: "primary",
         size: "small",
     },
@@ -77,7 +77,7 @@ export const SmallButton: Story = {
 // Variante con dimensione large
 export const LargeButton: Story = {
     args: {
-        label: "Aggiungi al carrello",
+        label: "Add to cart",
         variant: "primary",
         size: "large",
     },
@@ -87,9 +87,9 @@ export const LargeButton: Story = {
 export const AllSizesButton: Story = {
     render: () => (
         <div className="allbuttonsize">
-            <Button label="Aggiungi al carrello" size="small" />
-            <Button label="Aggiungi al carrello" size="medium" />
-            <Button label="Aggiungi al carrello" size="large" />
+            <Button label="Add to cart" size="small" />
+            <Button label="Add to cart" size="medium" />
+            <Button label="Add to cart" size="large" />
         </div>
     ),
 };

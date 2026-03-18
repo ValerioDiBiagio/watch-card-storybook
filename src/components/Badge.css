@@ -4,10 +4,14 @@
   /* Spaziatura interna */
   border-radius: 3rem;
   /* Forma arrotondata */
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs);
   /* Dimensione del testo */
   text-transform: uppercase;
   /* Testo in maiuscolo */
+  z-index: 2;
+  position: absolute;
+  left: 10px;
+  top: 10px;
 }
 
 /* Variante: badge per prodotti in sconto */

@@ -1,22 +1,19 @@
 .watch-card {
     width: 260px;
     border-radius: var(--spacing-sm);
-    background: var(--color-gray-0);
+    background: var(--color-gray-1);
     box-shadow: 0 4px 10px oklch(0% 0 0 / 0.08);
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .watch-card-image {
     position: relative;
-    padding: var(--spacing-md);
-    background: var(--color-gray-1);
-}
-
-.watch-card-image img {
-    width: 100%;
-    height: auto;
+    padding: var(--spacing-sm);
+    background: var(--color-gray-2);
+    cursor: pointer;
 }
 
 .watch-card-content {
@@ -44,10 +41,19 @@
     font-weight: 600;
     margin-top: var(--spacing-sm);
     color: var(--color-green-9);
+
 }
 
-.watch-card-actions {
-    padding: var(--spacing-md);
-    display: flex;
-    gap: var(--spacing-sm);
+.watch-card .button {
+    width: 100%;
+}
+
+.watch-card-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.watch-card-image img:hover {
+    transform: scale(1.05);
 }
