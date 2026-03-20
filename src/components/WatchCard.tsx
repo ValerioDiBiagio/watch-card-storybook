@@ -9,6 +9,7 @@ type WatchCardProps = {
     name: string;
     reference: string;
     price: string;
+    originalPrice?: string;
     badgeLabel?: string;
     badgeVariant?: "discount" | "sold-out" | "new-arrival";
     onAddToCart?: () => void;
@@ -21,6 +22,7 @@ export const WatchCard: React.FC<WatchCardProps> = ({
     name,
     reference,
     price,
+    originalPrice,
     badgeLabel,
     badgeVariant,
     onAddToCart,
@@ -42,9 +44,16 @@ export const WatchCard: React.FC<WatchCardProps> = ({
 
             <div className="watch-card-content">
                 <h5 className="watch-brand">{brand}</h5>
-                <h3 className="watch-name">{name}</h3>
+                <h6 className="watch-name">{name}</h6>
                 <h4 className="watch-reference">{reference}</h4>
-                <p className="watch-price">{price}</p>
+                <div className="watch-price-container">
+                    {badgeVariant === "discount" && originalPrice && (
+                        <span className="watch-price-original">
+                            {originalPrice}
+                        </span>
+                    )}
+                    <span className="watch-price">{price}</span>
+                </div>
                 <Button
                     label="Add to cart"
                     variant="primary"

@@ -14,7 +14,7 @@ export const NewArrival = {
         brand: "Rolex",
         name: "Submariner Date",
         reference: "Ref. 116610LN von 2012 / LC170",
-        price: "€9.500",
+        price: "9.500,00 €",
         badgeLabel: "New",
         badgeVariant: "new-arrival",
     },
@@ -22,11 +22,12 @@ export const NewArrival = {
 
 export const Discount = {
     args: {
-        image: "https://via.placeholder.com/200",
+        image: "src/assets/image/omega-speedmaster.png",
         brand: "Omega",
-        name: "Speedmaster",
-        reference: "fff",
-        price: "€4.200",
+        name: "Speedmaster Moonwatch Professional",
+        reference: "Ref. 310.30.42.50.01.002",
+        price: "7.120,00 €",
+        originalPrice: "8.900,00 €",
         badgeLabel: "-20%",
         badgeVariant: "discount",
     },
@@ -34,11 +35,11 @@ export const Discount = {
 
 export const SoldOut = {
     args: {
-        image: "https://via.placeholder.com/200",
+        image: "src/assets/image/longines-hydroconquest.png",
         brand: "Longines",
         name: "Hydroconquest",
-        reference: "fff",
-        price: "€3.200",
+        reference: "Ref. L3.782.4.96.6",
+        price: "2.000,00 € ",
         badgeLabel: "Sold Out",
         badgeVariant: "sold-out",
         disabled: true,
@@ -47,10 +48,10 @@ export const SoldOut = {
 
 export const SimpleCard = {
     args: {
-        image: "https://via.placeholder.com/200",
-        brand: "Seiko",
-        reference: "fff",
-        name: "Presage",
-        price: "€950",
+        image: "src/assets/image/breitling-navitimer.png",
+        brand: "Breitling",
+        reference: "Ref. AB01271A/F570-252S",
+        name: "Navitimer 01 Limited Edition Grey Dial Chronograph",
+        price: "9.850,00 €",
     },
 };
