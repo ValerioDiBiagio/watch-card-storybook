@@ -1,0 +1,17 @@
+<style>
+    /* Imposta il color-scheme generale su 'light' di default */
+    body {
+        color-scheme: light;
+
+        /* Se il body ha la classe 'dark-theme', usa il color-scheme 'dark' */
+        &:where(.dark-theme) {
+            color-scheme: dark;
+        }
+    }
+
+    body,
+    .sbdocs-preview.sbdocs-preview {
+        color: var(--color-neutral-text);
+        background-color: var(--color-neutral-bg);
+    }
+</style>
