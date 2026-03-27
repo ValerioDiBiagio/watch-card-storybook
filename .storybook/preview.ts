@@ -3,6 +3,8 @@ import "../src/styles/reset.css";
 import "../src/styles/variables.css";
 import "../src/styles/spacing.css";
 import "../src/styles/typography.css";
+// Importa il decoratore per  il tema (light/dark)
+import { withThemeByClassName } from "@storybook/addon-themes";
 
 const preview: Preview = {
   parameters: {
@@ -19,7 +21,20 @@ const preview: Preview = {
       // 'off' - skip a11y checks entirely
       test: 'todo'
     }
+
   },
+
+  decorators: [
+    // Applica i temi "light" e "dark" aggiungendo una classe al <body>
+    withThemeByClassName({
+      themes: {
+        light: "light-theme",
+        dark: "dark-theme",
+      },
+      defaultTheme: "light",     // tema predefinito
+      parentSelector: "body",    // il selettore su cui viene applicata la classe del tema
+    }),
+  ]
 };
 
 export default preview;
