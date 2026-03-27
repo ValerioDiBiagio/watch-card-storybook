@@ -59,7 +59,7 @@
 }
 
 .watch-price-original {
-    color: var(--color-gray-10);
+    color: light-dark(var(--color-gray-10), var(--color-gray-8));
     font-size: var(--font-size-body);
     /* stessa dimensione */
     position: relative;
