@@ -24,7 +24,7 @@ export const Discount = {
     args: {
         image: "src/assets/image/omega-speedmaster.png",
         brand: "Omega",
-        name: "Speedmaster Moonwatch Professional",
+        name: "Speedmaster Moonwatch",
         reference: "Ref. 310.30.42.50.01.002",
         price: "7.120,00 €",
         originalPrice: "8.900,00 €",

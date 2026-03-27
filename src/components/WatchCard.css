@@ -1,5 +1,5 @@
 .watch-card {
-    width: 260px;
+    max-width: 260px;
     border-radius: var(--spacing-sm);
     background: var(--color-gray-1);
     box-shadow: 0 4px 10px oklch(0% 0 0 / 0.08);
@@ -54,7 +54,6 @@
     display: flex;
     align-items: center;
     gap: var(--spacing-xs);
-
     /* spazio sopra e sotto */
     margin: var(--spacing-sm) 0;
 }
@@ -66,7 +65,7 @@
     position: relative;
 }
 
-/* linea rossa custom invece di text-decoration */
+/* linea rossa custom */
 .watch-price-original::after {
     content: "";
     position: absolute;

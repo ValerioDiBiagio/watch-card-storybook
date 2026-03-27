@@ -9,6 +9,9 @@
   text-transform: uppercase;
   /* Testo in maiuscolo */
   z-index: 2;
+}
+
+.watch-card .badge {
   position: absolute;
   left: 10px;
   top: 10px;
@@ -18,26 +21,22 @@
 .badge-discount {
   background: var(--color-red-8);
   color: var(--color-gray-1);
-  position: static;
 }
 
 /* Variante: badge per prodotti esauriti */
 .badge-sold-out {
   background: var(--color-gray-11);
   color: var(--color-gray-1);
-  position: static;
 }
 
 /* Variante: badge per nuovi arrivi */
 .badge-new-arrival {
   background: var(--color-green-8);
   color: var(--color-gray-1);
-  position: static;
 }
 
 /* Contenitore usato nella story Storybook per mostrare più badge insieme */
 .all-badges {
   display: flex;
   gap: var(--spacing-xs);
-  position: static;
 }
