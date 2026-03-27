@@ -1,7 +1,7 @@
 .watch-card {
     max-width: 260px;
     border-radius: var(--spacing-sm);
-    background: var(--color-gray-1);
+    background: light-dark(var(--color-gray-1), var(--color-gray-13));
     box-shadow: 0 4px 10px oklch(0% 0 0 / 0.08);
     overflow: hidden;
     display: flex;
@@ -12,7 +12,7 @@
 .watch-card-image {
     position: relative;
     padding: var(--spacing-sm);
-    background: var(--color-gray-2);
+    background: light-dark(var(--color-gray-2), var(--color-gray-8));
     cursor: pointer;
 }
 
@@ -22,18 +22,18 @@
 
 .watch-brand {
     font-size: var(--font-size-xs);
-    color: var(--color-gray-11);
+    color: light-dark(var(--color-gray-11), var(--color-gray-6));
 }
 
 .watch-name {
     font-size: var(--font-size-sm);
     margin: var(--spacing-xs) 0;
-    color: var(--color-gray-13);
+    color: light-dark(var(--color-gray-13), var(--color-gray-2));
 }
 
 .watch-reference {
     font-size: var(--font-size-xs);
-    color: var(--color-gray-11);
+    color: light-dark(var(--color-gray-11), var(--color-gray-6));
 }
 
 .watch-card .button {
@@ -81,5 +81,5 @@
     font-size: var(--font-size-body);
     /* stessa dimensione */
     font-weight: 600;
-    color: var(--color-green-9);
+    color: light-dark(var(--color-green-9), var(--color-green-5));
 }
