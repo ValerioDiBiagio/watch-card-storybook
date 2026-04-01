@@ -51,7 +51,7 @@ export const SimpleCard = {
         image: "src/assets/image/breitling-navitimer.png",
         brand: "Breitling",
         reference: "Ref. AB01271A/F570-252S",
-        name: "Navitimer 01 Limited Edition Grey Dial Chronograph",
+        name: "Navitimer 01 Chronograph",
         price: "9.850,00 €",
     },
 };
