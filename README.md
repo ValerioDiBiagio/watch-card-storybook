@@ -56,3 +56,23 @@ cd watch-card-storybook
 npm install
 npm run storybook
 ```
+
+## 📷 Screenshots
+
+### Badges
+
+![Light Mode](/src/assets/image/screen/badges.png)
+
+### Bottoni
+
+![Light Mode](/src/assets/image/screen/buttons.png)
+
+### Cards
+
+#### Light Mode
+
+![Light Mode](/src/assets/image/screen/cards-light.png)
+
+#### Dark Mode
+
+![Dark Mode](/src/assets/image/screen/cards-dark.png)
