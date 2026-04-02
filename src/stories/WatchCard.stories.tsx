@@ -39,7 +39,7 @@ export const SoldOut = {
         brand: "Longines",
         name: "Hydroconquest",
         reference: "Ref. L3.782.4.96.6",
-        price: "2.000,00 € ",
+        price: "2.000,00 €",
         badgeLabel: "Sold Out",
         badgeVariant: "sold-out",
         disabled: true,
@@ -53,5 +53,31 @@ export const SimpleCard = {
         reference: "Ref. AB01271A/F570-252S",
         name: "Navitimer 01 Chronograph",
         price: "9.850,00 €",
+    },
+};
+
+export const AllCards = {
+    render: () => {
+        const cards = [
+            NewArrival.args,
+            Discount.args,
+            SoldOut.args,
+            SimpleCard.args,
+        ];
+
+        return (
+            <div
+                style={{
+                    display: "flex",
+                    gap: "20px",
+                    flexWrap: "wrap",
+                    justifyContent: "center",
+                }}
+            >
+                {cards.map((card, index) => (
+                    <WatchCard key={index} {...card} />
+                ))}
+            </div>
+        );
     },
 };
